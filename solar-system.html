@@ -1,76 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar System Guide | The Orion Project</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Guide | The Orion Project</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header class="main-header">
+  <header class="main-header">
     <div class="logo-container">
-        <a href="index.html">
-            <h1 class="logo">🚀 The Orion Project</h1>
-            <span class="tagline">Reality Is Stranger Than Fiction.</span>
-        </a>
+      <a href="index.html">
+        <h1 class="logo">🚀 The Orion Project</h1>
+        <span class="tagline">Reality Is Stranger Than Fiction.</span>
+      </a>
     </div>
     <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="missions.html">Missions</a></li>
-            <li><a href="discoveries.html">Discoveries</a></li>
-            <li><a href="solar-system.html" class="active">Solar System</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="discoveries.html">Discoveries</a></li>
+        <li><a href="solar-system.html" class="active">Solar System</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </nav>
     <div class="search-bar">
-        <input type="text" placeholder="🔍 Search space news...">
+      <input type="text" placeholder="🔍 Search space news...">
     </div>
-</header>
+  </header>
 
-<main>
+  <main>
     <section class="page-header">
-        <h2>The Solar System Guide</h2>
-        <p>Your interactive reference guide to the planets, dwarf planets, and major moons in our cosmic neighborhood.</p>
+      <h2>The Solar System Structure</h2>
+      <p>Explore our cosmic neighborhood categorized by stellar mass, solid worlds, and outer giants.</p>
     </section>
 
     <section class="content-section">
-        <div class="content-grid">
-            <div class="content-card">
-                <h3>Inner Rocky Planets</h3>
-                <p>Mercury, Venus, Earth, and Mars. Discover their unique geological histories, atmospheres, and potential past or present water.</p>
-                <a href="#" class="btn btn-secondary btn-small">Explore Planets</a>
+      <div class="text-block" style="border-left: 4px solid var(--highlight);">
+        <h3>☀️ SUN</h3>
+        <div class="content-grid" style="margin-top: 1.5rem;">
+          <div class="content-card">
+            <h3>Sun</h3>
+            <p>A yellow dwarf star sitting at the gravitational center of our solar system.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Contains 99.8% of all mass in the solar system and fuses roughly 600 million tons of hydrogen every second.
             </div>
-            <div class="content-card">
-                <h3>Outer Gas & Ice Giants</h3>
-                <p>Jupiter, Saturn, Uranus, and Neptune. Explore massive storm systems, ring structures, and dozens of fascinating moons.</p>
-                <a href="#" class="btn btn-secondary btn-small">Explore Planets</a>
-            </div>
+          </div>
         </div>
-    </section>
-</main>
+      </div>
 
-<footer class="main-footer">
+      <div class="text-block" style="border-left: 4px solid var(--accent);">
+        <h3>🗿 SOLID PLANETS</h3>
+        <div class="content-grid" style="margin-top: 1.5rem;">
+          <div class="content-card">
+            <h3>Mercury</h3>
+            <p>The smallest terrestrial planet with extreme temperature swings.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Lacks a substantial atmosphere to trap heat, meaning temperatures drop drastically on its dark side despite proximity to the Sun.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Venus</h3>
+            <p>Earth's scorching twin trapped in a runaway greenhouse state.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Surface pressures are heavy enough to crush steel, under an atmosphere composed almost entirely of carbon dioxide.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Earth</h3>
+            <p>Our dynamic home world, uniquely balanced to support liquid surface water.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Protected by a powerful planetary magnetic field generated by fluid motion in its molten outer core.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Mars</h3>
+            <p>The rusty red desert world targeted for future human exploration.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Home to Olympus Mons, a shield volcano nearly triple the height of Mount Everest.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-block" style="border-left: 4px solid var(--highlight);">
+        <h3>🪐 OUTER GIANTS</h3>
+        <div class="content-grid" style="margin-top: 1.5rem;">
+          <div class="content-card">
+            <h3>Jupiter</h3>
+            <p>The gas giant powerhouse containing dozens of documented moons.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Features the Great Red Spot, a massive storm larger than Earth that has raged for hundreds of years.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Saturn</h3>
+            <p>The iconic ringed world composed primarily of water ice chunks.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Its majestic rings span hundreds of thousands of kilometers wide but are remarkably thin vertically.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Uranus</h3>
+            <p>An ice giant that orbits the Sun on its side.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Thought to have been knocked askew by a massive collision early in its history, creating bizarre extreme seasonal changes.
+            </div>
+          </div>
+          <div class="content-card">
+            <h3>Neptune</h3>
+            <p>A distant world whipped by ferocious supersonic atmospheric winds.</p>
+            <button class="btn btn-secondary btn-small" onclick="toggleContent(this)">Launch Intel</button>
+            <div class="expanded-content">
+              Displays a deep azure coloration caused by atmospheric methane absorbing red light wavelengths.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
     <div class="footer-grid">
-        <div class="footer-col">
-            <h4>The Orion Project</h4>
-            <p style="color: #94A3B8; font-size: 0.9rem;">Independent space media brand bringing deep-space science closer to home.</p>
-        </div>
-        <div class="footer-col">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="missions.html">Missions</a></li>
-                <li><a href="discoveries.html">Discoveries</a></li>
-            </ul>
-        </div>
+      <div class="footer-col">
+        <h4>The Orion Project</h4>
+        <p style="color: #94A3B8; font-size: 0.9rem;">Independent space media brand bringing deep-space science closer to home.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="discoveries.html">Discoveries</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 The Orion Project. All Rights Reserved.</p>
+      <p>&copy; 2026 The Orion Project. All Rights Reserved.</p>
     </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
